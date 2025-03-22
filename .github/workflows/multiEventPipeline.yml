@@ -20,5 +20,5 @@ jobs:
         if: github.event_name == 'pull'
         runs-on: ubuntu-latest
         steps: # Steps to be executed in the job
-        - name: "Running on pull request" # Step 1 (name: name is the step_name.)
-          run: echo "Running on master/test pull"
+            - name: "Running on pull request" # Step 1 (name: name is the step_name.)
+              run: echo "Running on master/test pull"
