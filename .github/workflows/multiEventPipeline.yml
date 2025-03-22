@@ -22,3 +22,10 @@ jobs:
         steps: # Steps to be executed in the job
             - name: "Running on pull request" # Step 1 (name: name is the step_name.)
               run: echo "Running on master/test pull"
+    
+    on-workflow-dispatch: # Job name
+        if: github.event_name == 'work_dispatch'
+        runs-on: ubuntu-latest
+        steps: # Steps to be executed in the job
+            - name: "Running on workflow dispatch"
+              run: echo "Running on workflow dispatch" 
