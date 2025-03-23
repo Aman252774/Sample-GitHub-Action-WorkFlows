@@ -6,7 +6,8 @@ on:
     pull_request: #Event: Whenever a pull request is made to the repository
         branches:
             - master
-            - newtest1
+            - newtest
+        types: closed
     
 jobs:
     on-push: # Job name.
