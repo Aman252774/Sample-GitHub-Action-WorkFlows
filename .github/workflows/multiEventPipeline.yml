@@ -10,7 +10,7 @@ on:
     
     
 jobs:
-    on-push: # Job name.
+    on-push: # Job name. 
         if: github.event_name == 'push'
         runs-on: ubuntu-latest
         steps: # Steps to be executed in the job
